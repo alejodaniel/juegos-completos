@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="smartGame" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>domain.Administrador</class>
+    <class>domain.Alumno</class>
+    <class>domain.Docente</class>
+    <class>domain.Persona</class>
+    <class>domain.Usuario</class>
+    <class>domain.Clase</class>
+    <class>domain.NivelPares</class>
+    <class>domain.Pares</class>
+    <class>domain.ResultadoNivel</class>
+    <class>domain.ResultadoJuego</class>
+    <class>domain.Ahorcado</class>
+    <class>domain.Comparacion</class>
+    <class>domain.Diferencia</class>
+    <class>domain.Figuras</class>
+    <class>domain.Operacion</class>
+    <class>domain.Reconocimiento</class>
+    <class>domain.Rompecabezas</class>
+    <class>domain.SopaLetras</class>
+    <class>domain.NivelDiferencia</class>
+    <class>domain.PuntoDiferencia</class>
+    <class>domain.NivelRompecabezas</class>
+    <class>domain.NivelOperacion</class>
+    <class>domain.Operador</class>
+    <class>domain.NivelFiguras</class>
+    <class>domain.Paisaje</class>
+    <class>domain.PuntoPaisaje</class>
+    <class>domain.NivelComparacion</class>
+    <class>domain.NivelReconocimiento</class>
+    <class>domain.NivelSopaLetras</class>
+    <class>domain.NivelAhorcado</class>
+    <class>domain.Pregunta</class>
+    <class>domain.Refran</class>
+    <class>domain.Texto</class>
+    <class>domain.Aumento</class>
+    <properties>
+      <property name="javax.persistence.sharedCache.mode" value="ALL"/>
+      <property name="eclipselink.cache.shared.default" value="false"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/smartgame"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+      <property name="eclipselink.ddl-generation.index-foreign-keys" value="true"/>
+      <property name="eclipselink.orm.throw.exceptions" value="true"/>
+      <property name="eclipselink.weaving" value="false"/>
+      <property name="eclipselink.logging.level" value="INFO"/>
+      <property name="eclipselink.create-ddl-jdbc-file-name" value="createDDL_ddlGeneration.jdbc"/>
+      <property name="eclipselink.drop-ddl-jdbc-file-name" value="dropDDL_ddlGeneration.jdbc"/>
+      <property name="eclipselink.ddl-generation.output-mode" value="both"/>
+      <property name="eclipselink.jdbc.cache-statements" value="false"/>
+      <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+      <property name="eclipselink.jdbc.batch-writing.size" value="1000"/>
+      <property name="eclipselink.persistence-context.close-on-commit" value="true"/>
+      <property name="eclipselink.persistence-context.flush-mode" value="commit"/>
+      <property name="eclipselink.persistence-context.persist-on-commit" value="true"/>
+      <property name="eclipselink.persistence-context.reference-mode" value="WEAK"/>
+    </properties>
+  </persistence-unit>
+</persistence>

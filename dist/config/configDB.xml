@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_67" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>javax.persistence.jdbc.url</string>
+   <string>jdbc:mysql://localhost:3306/smartgame</string>
+  </void>
+  <void method="put">
+   <string>javax.persistence.jdbc.password</string>
+   <string>alejodaniel12345</string>
+  </void>
+  <void method="put">
+   <string>javax.persistence.jdbc.user</string>
+   <string>root</string>
+  </void>
+ </object>
+</java>

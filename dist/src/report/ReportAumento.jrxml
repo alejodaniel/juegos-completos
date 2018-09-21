@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ca3848db-8acb-43c6-a11d-d6cfee977afb">
+	<property name="ireport.zoom" value="1.1000000000000008"/>
+	<property name="ireport.x" value="55"/>
+	<property name="ireport.y" value="0"/>
+	<field name="N°" class="java.lang.String"/>
+	<field name="ALUMNO" class="java.lang.String"/>
+	<field name="% ANTERIOR" class="java.lang.String"/>
+	<field name="% ACTUAL" class="java.lang.String"/>
+	<field name="PROMEDIO" class="java.lang.String"/>
+	<field name="RENDIMIENTO" class="java.lang.String"/>
+	<field name="HABILIDAD" class="java.lang.String"/>
+	<field name="JUEGO" class="java.lang.String"/>
+	<field name="FECHA" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2efa5617-3fbe-43c0-82ba-6248d6ab753c" x="125" y="24" width="555" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMART GAME]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2efa5617-3fbe-43c0-82ba-6248d6ab753c" x="125" y="0" width="555" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE RENDIMIENTO DE ESTUDIANTES]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4998e084-22d5-4860-953c-49afd8eed0d2" x="459" y="10" width="60" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[% ACTUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8ffa8f75-028f-4d0f-9b80-2bc05e4095b9" x="86" y="10" width="118" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALUMNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc1dd4ca-2c01-498e-8d67-d4f056cabfb1" x="60" y="10" width="26" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ca45300-f517-4932-b01c-1c648982625d" x="395" y="10" width="64" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[% ANTERIOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4998e084-22d5-4860-953c-49afd8eed0d2" x="519" y="10" width="60" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROMEDIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4998e084-22d5-4860-953c-49afd8eed0d2" x="579" y="10" width="71" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RENDIMIENTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4998e084-22d5-4860-953c-49afd8eed0d2" x="650" y="10" width="71" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HABILIDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ca45300-f517-4932-b01c-1c648982625d" x="284" y="10" width="111" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JUEGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ca45300-f517-4932-b01c-1c648982625d" x="204" y="10" width="80" height="15"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="44" y="0" width="37" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{N°}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="90" y="0" width="118" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ALUMNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="378" y="0" width="64" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{% ANTERIOR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="439" y="0" width="64" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{% ACTUAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="503" y="0" width="64" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PROMEDIO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="579" y="0" width="71" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RENDIMIENTO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="650" y="0" width="71" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HABILIDAD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="284" y="0" width="111" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JUEGO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7435c84-9278-44f6-9890-5852240d766b" x="204" y="0" width="80" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="cf922f54-748f-4375-b111-c439c160253e" x="578" y="30" width="143" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="45a2829b-ffab-429b-9f19-094b6d89e8b3" x="538" y="30" width="42" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="44" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="29" splitType="Stretch"/>
+	</summary>
+</jasperReport>
